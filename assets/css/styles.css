@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+*{
+    font-family: 'Fira Sans', sans-serif;
+}
+#top_panel{
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    }
+.nav_list li {
+    list-style-type: none;
+    display: inline-flex;
+    padding-left: 30px;
+}
+
+.nav_list a {
+    text-decoration: none;
+    color: #0f45fc;
+    font-size: x-large;
+}
+.nav_list a:hover {
+    color: black;
+    font-size: 600;
+}
+.nav_list {
+    margin: 15px 0 10px 40%;
+    width: auto;
+    position: absolute;
+    top: 2px; 
+    right: 100px;
+}
+#top_panel img {
+    margin-top: -2%;
+}
+#main-div{
+    display: grid;
+    grid-template-columns: 55% 42%;
+}
+#main-div > div {
+    margin: 20px;
+}
+#left-panel{
+    width: 100%;
+    height: 600px;
+}
+.intro-1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 250%;
+    font-weight: 200;
+    margin-top: 20%;
+}
+.intro-2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 350%;
+    font-weight:bolder;
+}
+#role {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 200%;
+    font-weight:100;
+}
+#right-panel{
+    height: 600px;
+    width: 100%;
+    text-align: right;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(248, 244, 244));
+}
+#main-img{
+    height: 570px;
+    width: auto;
+}
+.about-me {
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 4%;
+}
+.my-img {
+    width: 70%;
+    position: relative;
+    height: 51vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid black;
+    margin-left: 20%;
+}
+.laptop-img {
+    position: absolute;
+    width: 108%;
+    height: 55vh;
+    border-radius: 10px;
+    margin-right: 14%;
+    bottom: 5%;
+}
+.about-head {
+    color: #0f45fc;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -10px;
+}
+.my-content{
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 50px;
+}
+#edu-div {
+    text-align: center;
+}
+.heading {
+    font-size: 300%;
+}
+#parent-edu {
+    display: grid;
+    grid-template-columns: 5% 40% 9% 40%;
+}
+#edu-content {
+    white-space: nowrap;
+}
+#id1 {
+    border: 1px solid rgb(219, 214, 214);
+    border-radius: 5px;
+    background-color: black;
+}
+#id1:hover {
+    transform: scale(1.06);
+    transition: 1s;
+    background-color: #6383ec;;
+}
+#id3 {
+    background-color: black;
+    border-radius: 5px;
+}
+#id3:hover {
+    transform: scale(1.06);
+    transition: 1s;
+    background-color: #0f45fc;;
+}
+.edu-icons {
+    width: 8%;
+    margin-top: 2%;
+}
+.edu-icon1 {
+    width: 6%;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#schl-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    color: white;
+}
+.edu-icon2 {
+    width: 4.5%;
+    margin-left: 2%;
+}
+.edu-icon3 {
+    width: 5%;
+    margin-left: 2%;
+}
+#skills {
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+.html-div {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 30%;
+    float: left;
+    margin-left: 18%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.html-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+.css-div {
+    background-color: rgb(255, 255, 255);
+    width: 16%;
+    height: 25%;
+    float: left;
+    margin-left: 10%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.css-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+.js-div {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 30%;
+    float: left;
+    margin-left: 10%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.js-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+.skill-grp2 {
+    background-color: aqua;
+}
+.mysql-div {
+    background-color: rgb(255, 255, 255);
+    width: 15%;
+    height: 30%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 18%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.mysql-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+.java-div {
+    background-color: rgb(255, 255, 255);
+    width: 16%;
+    height: 140px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.java-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+.ruby-div {
+    background-color: rgb(255, 255, 255);
+    width: 16%;
+    height: 140px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0 5px 25px 0 rgb(0 0 0 / 20%);
+}
+.ruby-div:hover {
+    transform: scale(1.06);
+    transition: 0.5s;
+    box-shadow: 0 10px 60px 0 rgba(23, 23, 23, 0.2);
+}
+#contact {
+    display: grid;
+    grid-template-columns: 15% 15% 60% 10%;
+}
+.empty-div {
+    height: 10%;
+}
+#call-email-div {
+    margin-top: 10%;
+}
+.contact-icon {
+    width: 22%;
+    margin-left: 35%;
+}
+.phone-text {
+    margin-left: 23%;
+    font-size: 140%;
+    margin-top: 2%;
+}
+.phone-detail {
+    margin-left: 15%;
+    font-size: 115%;
+    color: rgb(132, 132, 132);
+}
+.email-text {
+    margin-left: 23%;
+    font-size: 140%;
+    margin-top: 2%;
+}
+.email-detail {
+    font-size: 100%;
+    color: rgb(132, 132, 132);
+}
+#form-grp1 label {
+    font-size: 150%;
+    margin-left: 10%;
+}
+#form-grp1 input {
+    width: 70%;
+    height: 35%;
+    margin-top: 1%;
+    margin-left: 10%;
+}
+#form-grp1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 40%;
+}
+#form-grp2 label {
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: -2%;
+}
+#form-grp2 input {
+    width: 85%;
+    height: 45px;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+#form-btn {
+    float: right;
+    margin-right: 9%;
+    margin-top: 1%;
+    width: 15%;
+    height: 40px;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+    font-size: larger;
+}
+#form-btn:hover {
+    background-color: white;
+    transition: 1s;
+    color: black;
+}
+.footer {
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(223, 220, 220);
+}
+#copyrights-text {
+    font-size: 100%;
+    margin-left: 10%;
+    color: black;
+}
+#social_links {
+    height: 30%;
+}
+#social_links img:hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
