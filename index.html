@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/1ef4b81014.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="top_panel">
@@ -15,9 +16,9 @@
         <ul class="nav_list">
             <li><a href="#main-div">Home</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#">My Works</a></li>
+            <li><a href="#my-works-div">My Works</a></li>
             <li><a href="#edu-div">Education</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about-me">About</a></li>
             <li><a href="#form-div">Contact</a></li>
         </ul>
     </div>
@@ -31,12 +32,12 @@
             <img src="./assets/images/riyas.png" id="main-img">
         </div>
     </div>
-    <div class="about-me">
+    <div id="about-me">
         <div class="my-img">
             <img src="./assets/images/riyas-laptop.jpeg" class="laptop-img">
         </div>
         <div class="about-content">
-            <p class="about-head">About Me</p>
+            <p class="heading ">About Me</p>
             <p class="my-content">Hi, My name is Mohamed Riyas. I'm a Student of FWSA.I studied at St. Xavier's Higher Secondary School at Tirunelveli.I'm very passionate and dedicated to my work.I love What I'm doing now. I love to play cricket and kabaddi as well.I'm a huge MS Dhoni Fan. Whenever I feel stress I will go to play Cricket.</p>
         </div>
     </div>
@@ -96,7 +97,87 @@
         </div>
     </div>
     <img src="./assets/images/end decor.png" width="20%" height="10%" style="margin-left: 40%;">
-    <h1 style="text-align: center;"> Get In Tuch</h1>
+    <div id="my-works-div">
+        <h1 class="heading" style="text-align: center;">My Works</h1>
+        <div id="project-div">
+            <div id="mobel-project-div">
+                <img src="./assets/images/mobel.png" width="99%" class="project-img">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a onclick="project_details()">View</a>
+                    </div>
+                </div>
+            </div>
+            <div id="todo-project-div">
+                <img src="./assets/images/todo.png" width="99%" height="100%" class="project-img">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a onclick="todo_project_details()">View</a>
+                    </div>
+                </div>
+            </div>
+            <div id="lifluid-project-div">
+                <img src="./assets/images/lifluid-project.png" width="99%" height="100%" class="project-img">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a onclick="lifluid_project_details()">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pop-up" id="pop-up">
+        <div class="pop-up-overlay">
+            <!-- <div class="cross-icon">
+                <img src="./assets/images/cross-img.png" onclick="close()">
+            </div> -->
+            <div class="pop-up-content">
+                <h1>Mobel Furnitures</h1>
+                <p>Redefine Your Home</p>
+                <img src="./assets/images/mobel.png" width="50%">
+            </div>
+            <div class="about-project">
+                <p style="color: white;">My Project name is Möbel Furnitures. The word möbel is swedish word means furnitures. It is a project where customer can buy furnitures through this website and decorate their homes with our beautiful furnitures in cheapest price.</p>
+                <a href=""  onclick="close()"><div type="submit"><p>Close</p></div></a> 
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-2" id="pop-up-2">
+        <div class="pop-up-overlay">
+            <!-- <div class="cross-icon">
+                <img src="./assets/images/cross-img.png" onclick="close()">
+            </div> -->
+            <div class="pop-up-content">
+                <h1>Todo Managment App</h1>
+                <img src="./assets/images/todo.png" width="50%">
+            </div>
+            <div class="about-project">
+                <p style="color: white;">The project Todo Managment App is very useful You Don't have to remember every tasks. You can create task, update and delete task. </p>
+                <a href=""  onclick="close()"><div type="submit"><p>Close</p></div></a> 
+            </div>
+        </div>
+    </div>
+    <div class="pop-up-3" id="pop-up-3">
+        <div class="pop-up-overlay">
+            <!-- <div class="cross-icon">
+                <img src="./assets/images/cross-img.png" onclick="close()">
+            </div> -->
+            <div class="pop-up-content">
+                <h1>Lifluid</h1>
+                <p style="text-align: center;margin-left: -5%;">Sometimes Blood Can Do What Money Cannot</p>
+                <img src="./assets/images/lifluid-project.png" width="50%">
+            </div>
+            <div class="about-project">
+                <p style="color: white;">Lifluid is a platform for blood donors and blood bank. The name Lifluid is a combination of two
+                    words life and fluid.We can regsiter as a
+                    user, donor and blood bank. We can search donor
+                    as per your district and blood banks also. Users
+                    can requests blood from blood banks.</p>
+                <a href=""  onclick="close()"><div type="submit"><p>Close</p></div></a> 
+            </div>
+        </div>
+    </div>
+    <h1 class="heading" style="text-align: center; margin-top: 44%;"> Get In Tuch</h1>
     <div id="contact">
         <div class="empty-div">
         </div>
@@ -146,6 +227,19 @@
     <script>
         function alert_func(){
             alert("Your response is submitted");
+        }
+        function project_details() {
+            document.getElementById('pop-up').classList.add("active");
+        }
+        function close() {
+            document.getElementById("pop-up").classList.remove("active");
+            window.reload('index.html')
+        }
+        function todo_project_details() {
+            document.getElementById('pop-up-2').classList.add("active");
+        }
+        function lifluid_project_details() {
+            document.getElementById('pop-up-3').classList.add("active");
         }
     </script>
 </body>
