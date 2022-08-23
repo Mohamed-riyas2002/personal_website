@@ -375,6 +375,7 @@ html {
     width: 39.5%;
     height: 39%;
     left: 54%;
+    cursor: pointer;
 }
 #lifluid-project-div {
     display: flex;
@@ -385,6 +386,7 @@ html {
     height: 39%;
     bottom: -315%;
     left: 30%;
+    cursor: pointer;
 }
 .overlay {
     position: absolute;
@@ -439,15 +441,23 @@ html {
     text-align: center;
     color: white;
     z-index: -1;
+    height: 70%;
 }
 .pop-up-content p {
     position: absolute;
     left: 44%;
-    top: 6%;
+    top: 5%;
     font-size: 18px;
 }
 .pop-up-content img {
-    margin-top: 4%;
+    margin-top: 1%;
+}
+.github-link {
+    text-decoration: none;
+    color: white;
+}
+.github-link:hover {
+    color: blue;
 }
 .about-project {
     display: flex;
